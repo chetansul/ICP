@@ -1,0 +1,49 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'icomoon.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+<nav class="fh5co-nav" role="navigation">
+    <div class="top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2">
+                    <div id="fh5co-logo"><img src="{% static 'core/images/logo.png' %}" style="width: 85px; height: auto;"><a href="index.html"style="margin-left: 20px;"><span>ICP</span></a></div>
+                </div>
+                <div class="col-xs-10 text-right menu-1">
+                    <ul>
+                        <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                        <li class="has-dropdown"><a href="{% url 'booked' %}">Testing</a>
+                            <ul class="dropdown">
+                                <li><a href="departments-single.html">test 1</a></li>
+                                <li><a href="departments-single.html">test 2</a></li>
+                                <li><a href="departments-single.html">test 3</a></li>
+                            </ul>
+                        </li>
+
+                        
+                        </li><li><a href="{% url 'about' %}">About us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="btn-cta"><a href="{% url 'booked' %}"><span>Login</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12    text-right">
+                    <p class="loc"><i class="fas fa-map-marker-alt"></i> Niramay, S.No. 89/2A,
+                        New Pune Mumbai Highway,Tathwade,
+                        Pune -411033</p>
+                    <p class="num"><span><i class="fas fa-envelope"></i></span>  Mail: <span>adminicp@indiraicp.edu.in</span></p>
+                    <ul class="fh5co-social">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
