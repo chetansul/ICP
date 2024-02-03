@@ -1,6 +1,6 @@
 
 from core.models import drugs,result
-import twilio.rest
+from twilio.rest import Client 
 from celery import shared_task
 from django.core.mail import send_mail
 from pharma import settings

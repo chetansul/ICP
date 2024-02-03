@@ -24,6 +24,6 @@ urlpatterns = [
     path('admin/',admin.site.urls),
     path('', views.index, name="home"),
     path('cores/', include('core.urls')),
-    #path('users/', include('user.urls')),
+    
 
 ]

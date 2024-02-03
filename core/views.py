@@ -35,6 +35,7 @@ def booking(request):
         mobile=request.POST.get('mobile')
         drugname= request.POST.get('dname')
         state= request.POST.get('state')
+        batch=request.POST.get('batchno')
         exp=request.POST.get('expdate')
         manu=request.POST.get('mgfdate')
         packmaterial= request.POST.get('pack')
@@ -43,6 +44,7 @@ def booking(request):
         drug.email=email
         drug.mobile=mobile
         drug.name=drugname
+        drug.batch=batch
         drug.state=state
         drug.packmaterial=packmaterial
         drug.mfg=manu
